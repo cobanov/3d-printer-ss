@@ -65,7 +65,7 @@ async def main():
     try:
         logger.info("Opening webpage...")
         driver.get("http://192.168.0.24:8080/browserfs.html")
-        await asyncio.sleep(2)  # Wait for page load/any async operations on the page
+        await asyncio.sleep(20)  # Wait for page load/any async operations on the page
 
         screenshot_path = "screenshot.png"
         driver.save_screenshot(screenshot_path)
